@@ -1,0 +1,232 @@
+.card-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.card-detail {
+  max-width: 600px;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.detail-header {
+  padding: 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.detail-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.detail-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.detail-username {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.detail-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.detail-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.status-indicator.online {
+  background-color: #4CAF50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.7);
+}
+
+.status-indicator.offline {
+  background-color: #757575;
+}
+
+.detail-body {
+  padding: 40px;
+}
+
+.detail-section {
+  margin-bottom: 30px;
+}
+
+.detail-section h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #3398db;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.detail-location {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+.detail-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary, .btn-hire {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.btn-primary {
+  background-color: #3398db;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #7f8c8d;
+  transform: translateY(-2px);
+}
+
+.btn-hire {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-hire:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  color: #3398db;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.error-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #e74c3c;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 400px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-detail-container {
+    padding: 10px;
+  }
+  
+  .detail-header {
+    padding: 30px 20px;
+  }
+  
+  .detail-body {
+    padding: 30px 20px;
+  }
+  
+  .detail-title {
+    font-size: 1.6rem;
+  }
+  
+  .detail-actions {
+    flex-direction: column;
+  }
+  
+  .btn-primary, .btn-secondary, .btn-hire {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .detail-title {
+    font-size: 1.4rem;
+  }
+  
+  .detail-header {
+    padding: 25px 15px;
+  }
+  
+  .detail-body {
+    padding: 25px 15px;
+  }
+}
